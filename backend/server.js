@@ -45,7 +45,7 @@ app.post('/api/recipes/searchByIngredients', async (req, res) => {
       // Find recipes where the NER field contains any of the input ingredients
       const recipes = await Recipe.find({
         NER: { $in: lowerCaseIngredients },
-      });
+      }).limit(100);
   
       console.log('Number of recipes found:', recipes.length);
   
