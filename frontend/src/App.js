@@ -13,7 +13,7 @@ function App() {
 
   return(
     <div>
-      <Header title="Welcome to DishDash!" subtitle="What's in your Fridge?" /> {/* This uses the Header component */}
+      <Header title="Welcome to DishDash!" subtitle="What's in your fridge?" /> {/* This uses the Header component */}
       <SearchBar onSearch={handleSearch} /> {/* Add SearchBar */}
       
       {/* Display the search query below */}

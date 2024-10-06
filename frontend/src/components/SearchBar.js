@@ -106,7 +106,7 @@ function SearchBar() {
           type="text"
           value={query}
           onChange={handleInputChange}
-          placeholder="Enter Items in your Fridge..."
+          placeholder="Enter Items in your fridge..."
           className="search-input"
         />
         <button type="submit" className="search-button">
