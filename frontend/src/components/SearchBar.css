@@ -1,0 +1,171 @@
+.search-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Changed from center to flex-start */
+    align-items: center;
+    height: 100vh;
+    padding-top: 50px; /* Added padding to maintain spacing from the top */
+  }
+  
+  /* Style the logo */
+  .logo {
+    width: 600px;
+    margin-bottom: 40px;
+  }
+  
+  /* Style the search input */
+  .search-input {
+    padding: 15px;
+    font-size: 18px;
+    width: 500px;
+    border-radius: 50px;
+    border: 2px solid #ddd;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the search button */
+  .search-button {
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #F74E26;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect for the search button */
+  .search-button:hover {
+    background-color: #DB1709;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the terms container */
+  .terms-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  /* Style each term as a chip */
+  .term-chip {
+    background-color: #3E8CCF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for each chip */
+  .term-chip:hover {
+    background-color: #342DAE;
+  }
+  
+  /* Style the recipes container */
+  .recipes-container {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+    max-height: 400px; /* Set a max height for the container */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+    padding-right: 10px;
+  }
+  
+  /* Ensure the recipe cards inside the container look good */
+  .recipes-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style each recipe card */
+  .recipes-container li {
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .recipes-container li:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .recipes-container {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 900px; /* Adjusted max-width to make the results wider */
+    width: 100%;
+    max-height: none; /* Removed the height restriction */
+    overflow-y: visible; /* Disabled scrolling */
+    padding-right: 10px;
+  }
+  
+  
+  .recipes-container p strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .recipes-container a {
+    color: #3E8CCF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .recipes-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .recipes-container {
+      padding: 0 10px;
+    }
+  
+    .recipes-container li {
+      padding: 15px;
+    }
+  
+    .recipes-container h3 {
+      font-size: 1.25rem;
+    }
+  
+    .recipes-container p {
+      font-size: 0.95rem;
+    }
+  }
+
+  .suggestions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* Style each suggestion chip */
+  .suggestion-chip {
+    background-color: #AFD247; /* Suggested chip color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .suggestion-chip:hover {
+    background-color: #A0C32E;
+  }
+  

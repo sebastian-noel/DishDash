@@ -1,19 +1,23 @@
-import React from 'react';
-import RecipeSearch from './RecipeSearch.js';
-import './App.css'; // Make sure you have this file for global styles
+import React, { useState } from 'react';
+import Header from './components/Header'; 
+import SearchBar from './components/SearchBar';
+import './styles.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>DishDash Recipe Finder</h1>
-      </header>
-      <main>
-        <RecipeSearch />
-      </main>
-      <footer>
-        <p>© 2024 DishDash. All rights reserved.</p>
-      </footer>
+  const [searchQuery, setSearchQuery] = useState(''); // Track the search query
+
+  // Handle search input
+  const handleSearch = (query) => {
+    setSearchQuery(query); // Update the search query when a search is made
+  };
+
+  return(
+    <div>
+      <Header title="Welcome to DishDash!" subtitle="What's in your Fridge?" /> {/* This uses the Header component */}
+      <SearchBar onSearch={handleSearch} /> {/* Add SearchBar */}
+      
+      {/* Display the search query below */}
+      {searchQuery && <p>Searching for: <strong>{searchQuery}</strong></p>}
     </div>
   );
 }
